@@ -13,30 +13,39 @@
     <!-- Primera Sección -->
 
 
-    <div class="contenedor-menu">
-        <nav class="navigation">
-            <div class="navigation-icon">
-                <img src="imagenes/icon1.png" alt="">
-            </div>
-            <div class="navigation-icon">
-                <img src="imagenes/icon2.png" alt="">
-            </div>
-            <div class="navigation-icon">
-                <img src="imagenes/icon3.png" alt="">
-            </div>
-            <div class="navigation-icon">
-                <img src="imagenes/icon4.png" alt="">
-            </div>
-            <div class="navigation-icon">
-                <img src="imagenes/icon5.png" alt="">
-            </div>
+    <!--  <div class="contenedor-menu">
+            <nav class="navigation">
+                <div class="navigation-icon">
+                    <img src="imagenes/icon1.png" alt="">
+                </div>
+                <div class="navigation-icon">
+                    <img src="imagenes/icon2.png" alt="">
+                </div>
+                <div class="navigation-icon">
+                    <img src="imagenes/icon3.png" alt="">
+                </div>
+                <div class="navigation-icon">
+                    <img src="imagenes/icon4.png" alt="">
+                </div>
+                <div class="navigation-icon">
+                    <img src="imagenes/icon5.png" alt="">
+                </div>
 
-        </nav>
-    </div>
-    </div>
-
-
+            </nav>
+        </div> -->
     <div class="container">
+        <div class="menu-nav">
+            <ul>
+                <li><a href="https://boysenn.webflow.io/#home" target="_blank"><img src="imagenes/icon1.png" alt=""></a>
+                </li>
+                <li><a href="https://boysenn.webflow.io/#home" target="_blank"><img src="imagenes/icon2.png" alt=""></a>
+                </li>
+                <li><a href="https://boysenn.webflow.io/#home" target="_blank"><img src="imagenes/icon3.png" alt=""></a>
+                </li>
+                <li><a href="https://boysenn.webflow.io/#home" target="_blank"><img src="imagenes/icon4.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
         <div class="section">
             <div class="infoPersonal">
                 <div class="subsection">
@@ -47,13 +56,15 @@
                         <div class="dot">
                         </div>
                     </div>
-                    <img src="imagenes/logo.jpg" alt="Foto" class="perfil">
+                    <img src="imagenes/foto_cv.jpeg" alt="Foto" class="perfil">
                 </div>
                 <div class="subsection">
-                    <p class="present"> Hola Soy Adriana Martinez, originaria de Acapulco con muchas ganas de
-                        aprender.
+                    <p class="present"> Soy una persona con gran motivación para seguir perfeccionando habilidades
+                        y crecer profesionalmente. <br>
+                        Confió ampliamente en mi capacidad de aplicar mis conocimientos
+                        en el área de trabajo, teniendo un gran desempeño en las actividades necesarias.
                     </p>
-                    <div>
+                    <div class="btn-BL">
                         <button class="btn-Black">WORK</button>
                         <button class="btn-Lined">CV Download</button>
                     </div>
@@ -75,9 +86,6 @@
                 </div>
                 <div class="space">
                     <img src="imagenes/git.png" alt="" class="imgLogotipos">
-                </div>
-                <div class="space">
-                    <img src="imagenes/mexico.webp" alt="" class="imgLogotipos">
                 </div>
                 <div class="space">
                     <img src="imagenes/github.jpg" alt="" class="imgLogotipos">
@@ -102,12 +110,12 @@
                         </p>
                         <a href="https://acapulco.tecnm.mx/" class="links" target="_blank">ita</a>
                         <div class="educationYear">
-                            2015-2016
+                            2015-2021
                         </div>
                     </div>
                 </div>
                 <div class="subsection">
-                    <h2>Experiencia</h2>
+                    <h2>Educacion</h2>
                     <div class="infoEducation">
                         <p>Instituto Tecnológico de Acapulco
                             <br>
@@ -222,24 +230,24 @@
         <div class="section">
             <form id="form">
                 <div class="field">
-                  <label for="from_name">from_name</label>
-                  <input type="text" name="from_name" id="from_name">
+                    <label for="from_name">from_name</label>
+                    <input type="text" name="from_name" id="from_name">
                 </div>
                 <div class="field">
-                  <label for="email_id">email_id</label>
-                  <input type="text" name="email_id" id="email_id">
+                    <label for="email_id">email_id</label>
+                    <input type="text" name="email_id" id="email_id">
                 </div>
                 <div class="field">
-                  <label for="message">message</label>
-                  <input type="text" name="message" id="message">
+                    <label for="message">message</label>
+                    <input type="text" name="message" id="message">
                 </div>
-              
-                <input type="submit" id="button" value="Send Email" >
-              </form>
+
+                <input type="submit" id="button" value="Send Email">
+            </form>
         </div>
         <br><br><br>
     </div>
-    </div>
+
 
 
     <script src="email.js"></script>
@@ -247,6 +255,7 @@
     <script type="text/javascript">
         emailjs.init('5pGr9q-gHVL8pUTEg')
     </script>
+
 </body>
 
 </html>
