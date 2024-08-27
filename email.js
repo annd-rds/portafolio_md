@@ -18,3 +18,17 @@ document.getElementById('form')
                 alert(JSON.stringify(err));
             });
     });
+
+const btnDivEfecto = document.querySelector('.divEfecto'),
+    btnDivEfecto2 = document.querySelector('.parent');
+    console.log(btnDivEfecto);
+    console.log(btnDivEfecto2);
+
+btnDivEfecto.addEventListener('click', function (e) {
+
+    if (btnDivEfecto2.classList.contains("show")) {
+        btnDivEfecto2.classList.remove("show");
+    } else {
+        btnDivEfecto2.classList.add("show");
+    }
+});
