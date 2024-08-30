@@ -1,42 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 body {
-    background-color: #fff1d7;
+    background-color: #ab4493;
 
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    color: #56413e;
-
+    color: black;
+    display: flex;
+    
     /*#fff1d7*/
 }
 
 .menu-nav {
-    background-color: black;
+    background-color: white;
     height: 60px;
-    width: 300px;
+    width: 100%;
     border-radius: 50px;
+    border: 2px solid #ab4493;
     position: sticky;
-    top: 10px;
+    top: 0px;
     align-content: center;
     margin: 0 auto 20px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
 }
-
 .menu-nav img{
-    width: 20px;
-    height: 20px;
-    margin-top: 18px;
+    width: 30px;
+    height: 25px;   
 }
 
 .menu-nav:hover{
     cursor: pointer;
 }
-
+ .barra-nav{
+    display: none;
+ }
 /*.menu-nav ul {
     display: flex;
     flex-direction: row;
@@ -66,7 +68,7 @@ ul li img {
     max-width: 800px;
     width: 100%;
     /*background-color: white;*/
-    margin: 50px auto;
+    margin: 10px auto;
 }
 
 .infoPersonal {
@@ -108,7 +110,8 @@ ul li img {
 
 .perfil {
     max-width: 100%;
-    border-radius: 50px;
+    border-radius: 50%;
+    border: 1px solid #ab4493;
     height: 250px;
     margin-top: 20px;
     margin-left: auto;
@@ -120,34 +123,37 @@ ul li img {
 }
 
 .present {
-    font-size: x-large;
+    font-size: 30px;
     text-align: justify;
     font-weight: 300;
 }
 
 .btn-Black {
-    background-color: black;
+    background-color: #ab4493;
     color: white;
     padding: 20px;
     border-radius: 30px;
+    border: none;
 }
 
 .btn-Black:hover {
-    background-color: white;
+    background-color: #97d848;
     color: black;
     cursor: pointer;
+    
 }
 
 .btn-Lined {
-    background-color: white;
+    background-color: #97d848;
     padding: 20px;
     border-radius: 30px;
     text-decoration: underline;
     margin-left: 12px;
+    border: none;
 }
 
 .btn-Lined:hover {
-    background-color: black;
+    background-color: #ab4493;
     color: white;
     cursor: pointer;
 }
@@ -203,6 +209,7 @@ h2 {
     font-size: 23px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #ab4493;
 }
 
 form{
@@ -240,7 +247,7 @@ span{
 	height: 40px; 
 	border-radius: 5px;  
 	border-style: solid; 
-	border-width: 1px; 
+	border-width: 2px; 
 	border-color: #ab4493; 
 	margin-top: 10px;  
 	padding-left: 10px;
@@ -268,12 +275,12 @@ textarea{
       height: 150px; 
       border-radius: 5px;  
       border-style: solid; 
-      border-width: 1px; 
+      border-width: 2px; 
       border-color: #ab4493; 
       margin-top: 10px;  
       padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
+      margin-bottom: 20px; 
+      padding-top: 15px; 
   }
 
   input:focus{
@@ -285,7 +292,6 @@ textarea:focus{
     outline:0;
 	border: 2px solid #97d848;
 }
-
 .imgCursos{
     width: 100%;
     height: 250px;
@@ -357,11 +363,13 @@ textarea:focus{
     letter-spacing: 2px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #ab4493;
 }
 
 .listHab{
     margin-left: 60px;
     line-height: 30px;
+    font-size: 18px;
     
 }
 
@@ -388,7 +396,39 @@ h3{
 
 
 
-@media (max-width: 410px) {
+@media (min-width: 800px) { 
     
+    .menu-nav{
+        display: none;
+    }
 
+    .barra-nav{
+        background-color: white;
+        height: 500px;
+        width: 60px;
+        border-radius: 50px;
+        border: 2px solid #97d848;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        top: 50px;
+        margin-left: 150px;
+        margin-right: 20px;
+    }
+
+    .barra-nav img{
+        width: 30px;
+        height: 25px;   
+    }
+    
+    .barra-nav:hover{
+        cursor: pointer;
+    }
+
+    .contenedor{
+        margin-right: 200px;
+    }
 }
