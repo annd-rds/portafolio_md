@@ -286,7 +286,7 @@ textarea:focus{
 }
 .imgCursos{
     width: 100%;
-    height: 250px;
+    height: 200px;
     border: 1px solid black;
     border-radius: 10px;
 
@@ -326,6 +326,13 @@ textarea:focus{
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+}
+
+.divEfecto1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    margin-bottom: 2px;
 }
 
 .parent {
